@@ -1,6 +1,8 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
+import "hardhat/console.sol";
+
 
 
 contract TomBank{
@@ -22,7 +24,7 @@ contract TomBank{
     
     event Sent(address from, address _to, uint _amount);
     event Received(address, uint);
-    address owner;
+    address public owner;
      constructor() {
          owner = msg.sender;
     
